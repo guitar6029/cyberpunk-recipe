@@ -1,12 +1,18 @@
 import Image from "next/image";
-
+import styles from './page.module.css';
+import { ArrowUpRight, Barcode, Package, Axe, Bot } from 'lucide-react';
+import { partners, PartnerCompany } from "@/dummydata/partners";
+import Hero from "@/components/Hero/Hero";
+import WhatIsHacks from "@/components/whatIsHacks/WhatIsHacks";
+import OurPartners from "@/components/OurPartners";
+import Testimonials from "@/components/Testimonials/Testimonials";
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center gap-2">
-      <Image className="rounded-xl" src="/biohacks/cyberpunk.png" alt="cyberpunk" width={500} height={500} />
-
-      
-      <h1 className="text-4xl text-yellow-200">Cyberpunk Recipe App</h1>
+    <div className="min-h-screen flex flex-col">
+      <WhatIsHacks />
+      <Hero />
+      <Testimonials />
+      <OurPartners />
     </div>
   );
 }

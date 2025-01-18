@@ -2,16 +2,20 @@ import Link from "next/link";
 
 const Navbar = () => {
     return (
-        <div className="flex flex-row items-center gap-4 p-4 h-[100px] justify-center">
+        <div className="flex flex-row items-center gap-4 p-4 h-[100px]">
+            <h1 className="text-3xl text-yellow-200 border-2 p-3 border-yellow-200">hacks</h1>
             <div className="flex flex-row items-center gap-2">
-                <Link className="hover:bg-yellow-100 transition duration-200 ease-in hover:text-black p-3" href="/">Home</Link>
-                <Link className="hover:bg-yellow-100 transition duration-200 ease-in hover:text-black p-3" href="/biohacks">Biohacks</Link>
+                <Link className="hover:bg-yellow-100 transition duration-200 ease-in hover:text-black p-4" href={"/"}>Home</Link>
+                <Link className="hover:bg-yellow-100 transition duration-200 ease-in hover:text-black p-4" href={"/biohacks"}>Biohacks</Link>
             </div>
-            <h1 className="text-3xl text-yellow-100">hacks</h1>
-
+            {/* <div className="hacks-container">
+                <h1 className="text-3xl text-yellow-200">hacks</h1>
+                <div className="animated-point"></div>
+            </div> */}
             <div className="flex flex-row items-center gap-2">
-                <Link className="hover:bg-yellow-100 transition duration-200 ease-in hover:text-black p-3" href="/community">Community</Link>
-                <Link className="hover:bg-yellow-100 transition duration-200 ease-in hover:text-black p-3" href="/match">Match</Link>
+                <Link className="hover:bg-yellow-100 transition duration-200 ease-in hover:text-black p-4" href={"/biohacks/community"}>Community</Link>
+                <Link className="hover:bg-yellow-100 transition duration-200 ease-in hover:text-black p-4" href={"/biohacks/match"}>Match</Link>
+                <Link className="hover:bg-yellow-100 transition duration-200 ease-in hover:text-black p-4" href={"/biohacks/share"}>About</Link>
             </div>
         </div>);
 }

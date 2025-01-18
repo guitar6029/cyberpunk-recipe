@@ -21,3 +21,55 @@ body {
   background: var(--background);
   font-family: 'Roboto Mono', monospace;
 }
+
+
+/* styles.css */
+body {
+  background-color: #0a0a0a;
+  color: #fff;
+}
+
+.hacks-container {
+  position: relative;
+  display: inline-block;
+}
+
+.animated-point {
+  width: 2px;
+  height: 2px;
+  background-color: #ff007f;
+  border-radius: 50%;
+  position: absolute;
+  top: -15px;
+  /* Adjust as needed */
+  left: -15px;
+  /* Adjust as needed */
+  animation: move-around 4s 1 linear;
+}
+
+@keyframes move-around {
+  0% {
+    top: -15px;
+    left: -15px;
+  }
+
+  25% {
+    top: -15px;
+    left: 100%;
+  }
+
+  50% {
+    top: 100%;
+    left: 100%;
+  }
+
+  75% {
+    top: 100%;
+    left: -15px;
+  }
+
+  100% {
+    top: -15px;
+    left: -15px;
+  }
+}
