@@ -8,19 +8,19 @@ const Footer: React.FC = () => {
 
                 <div className="flex flex-col gap-3">
                     <h1 className="font-bold text-2xl">Category</h1>
-                    <Link href={"/#"} className="text-xl text-green-400">Link 1</Link>
-                    <Link href={"/#"} className="text-xl text-green-400">Link 2</Link>
+                    <Link href={"/#"} className="text-xl text-green-400 hover:underline">Link 1</Link>
+                    <Link href={"/#"} className="text-xl text-green-400 hover:underline">Link 2</Link>
                 </div>
 
                 <div className="flex flex-col gap-3">
                     <h1 className="font-bold text-2xl">Category</h1>
-                    <Link href={"/#"} className="text-xl text-green-400">Link 3</Link>
-                    <Link href={"/#"} className="text-xl text-green-400">Link 4</Link>
+                    <Link href={"/#"} className="text-xl text-green-400 hover:underline">Link 3</Link>
+                    <Link href={"/#"} className="text-xl text-green-400 hover:underline">Link 4</Link>
                 </div>
                 <div className="flex flex-col gap-3">
                     <h1 className="font-bold text-2xl">Category</h1>
-                    <Link href={"/#"} className="text-xl text-green-400">Link 3</Link>
-                    <Link href={"/#"} className="text-xl text-green-400">Link 4</Link>
+                    <Link href={"/#"} className="text-xl text-green-400 hover:underline">Link 3</Link>
+                    <Link href={"/#"} className="text-xl text-green-400 hover:underline">Link 4</Link>
                 </div>
             </div>
         </footer>
