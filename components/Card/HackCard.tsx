@@ -1,8 +1,8 @@
-import { Gadget } from "@/dummydata/hacks";
+import { TGadget } from "@/dummydata/hacks";
 import { Bolt } from 'lucide-react';
 
 type Props = {
-    gadget: Gadget
+    gadget: TGadget
 }
 
 const HackCard: React.FC<Props> = ({ gadget }: Props) => {

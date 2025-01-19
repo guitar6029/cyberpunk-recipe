@@ -1,6 +1,7 @@
 export type TradeLevel = "low" | "medium" | "high"
 
-export type Gadget = {
+export type TGadget = {
+    id: string
     gadget: string;
     ingredients: string[];
     instructions: string[];
@@ -10,11 +11,13 @@ export type Gadget = {
         psychosisPossible: boolean
         tradeExchangeLevel: TradeLevel
     }
+    img: string
     shortDescription: string
 }
 
-export const gadgets: Gadget[] = [
+export const gadgets: TGadget[] = [
     {
+        id: 'f34545256',
         gadget: "Bio Hulk Hands",
         ingredients: [
             "10x Metal Shards",
@@ -33,9 +36,11 @@ export const gadgets: Gadget[] = [
             psychosisPossible: true,
             tradeExchangeLevel: "high"
         },
-        shortDescription: "Unleash devastating power with neon-green Bio Hulk Hands, merging organic and synthetic might for unmatched strength."
+        shortDescription: "Unleash devastating power with neon-green Bio Hulk Hands, merging organic and synthetic might for unmatched strength.",
+        img: "/biohacks/cards/hulkHandUpgrade.png"
     },
     {
+        id: 'f34545256',
         gadget: "Neural Interface Hack Chip",
         ingredients: [
             "5x Microchips",
@@ -56,9 +61,11 @@ export const gadgets: Gadget[] = [
             psychosisPossible: true,
             tradeExchangeLevel: "high"
         },
-        shortDescription: "Master the digital realm with the Neural Interface Hack Chip, seamlessly merging your mind with cyberspace for unparalleled hacking prowess."
+        shortDescription: "Master the digital realm with the Neural Interface Hack Chip, seamlessly merging your mind with cyberspace for unparalleled hacking prowess.",
+        img: "/biohacks/cards/neuralInterfaceHackChip.png"
     },
     {
+        id: 'f34545257',
         gadget: "Chromatic Eye Enhancer",
         ingredients: [
             "1x Cybernetic Eye Shell",
@@ -78,9 +85,11 @@ export const gadgets: Gadget[] = [
             psychosisPossible: false,
             tradeExchangeLevel: "low"
         },
-        shortDescription: "Enhance your vision with the Chromatic Eye Enhancer, experiencing vivid colors and augmented reality in any environment."
+        shortDescription: "Enhance your vision with the Chromatic Eye Enhancer, experiencing vivid colors and augmented reality in any environment.",
+        img: "/biohacks/cards/chromaticEyeEnhancer.png"        
     },
     {
+        id: 'f34545258',
         gadget: "Stealth Cloak",
         ingredients: [
             "8x Nano-Fabric Panels",
@@ -102,10 +111,12 @@ export const gadgets: Gadget[] = [
             tradeExchangeLevel: "low"
         },
 
-        shortDescription: "Become a ghost in the neon-lit city with the Stealth Cloak, rendering yourself invisible and undetectable to both eyes and sensors."
+        shortDescription: "Become a ghost in the neon-lit city with the Stealth Cloak, rendering yourself invisible and undetectable to both eyes and sensors.",
+        img: "/biohacks/cards/stealthCloak.png"
     },
     {
 
+        id: 'f34545259',
         gadget: "Cybernetic Arm",
         ingredients: ["12x Titanium Plates", "4x Hydraulic Pistons", "3x Neural Interface Cables", "2x Energy Cells (high capacity)", "1x Multi-tool Attachment Kit"],
         instructions: [
@@ -121,9 +132,11 @@ export const gadgets: Gadget[] = [
             psychosisPossible: true,      
             tradeExchangeLevel: "high"
         },
-        shortDescription: "The Cybernetic Arm is the ultimate augmentation for the modern warrior. Constructed from Titanium Plates, it offers unparalleled strength and durability."
+        shortDescription: "The Cybernetic Arm is the ultimate augmentation for the modern warrior. Constructed from Titanium Plates, it offers unparalleled strength and durability.",
+        img: "/biohacks/cards/cyberneticArm.png" 
     },
     {
+        id: 'f34545260',
         gadget: "Quantum Shield Generator",
         ingredients: [
             "5x Quantum Particles",
@@ -144,10 +157,12 @@ export const gadgets: Gadget[] = [
             psychosisPossible: false,
             tradeExchangeLevel: "high"
         },
-        shortDescription: "Equip yourself with the Cybernetic Arm for unmatched strength, durability, and versatility, perfect for the dystopian streets of the future."
+        shortDescription: "Equip yourself with the Cybernetic Arm for unmatched strength, durability, and versatility, perfect for the dystopian streets of the future.",
+        img: "/biohacks/cards/shield.png"
     },
     {
 
+        id: 'f34545261',
         gadget: "Sonic Disruptor Gauntlet",
         ingredients: [
             "8x Sonic Emitters",
@@ -168,7 +183,8 @@ export const gadgets: Gadget[] = [
             psychosisPossible: false,
             tradeExchangeLevel: "high"
         },
-        shortDescription: "Harness the power of sound with the Sonic Disruptor Gauntlet, unleashing concussive blasts to incapacitate foes and shatter obstacles."
+        shortDescription: "Harness the power of sound with the Sonic Disruptor Gauntlet, unleashing concussive blasts to incapacitate foes and shatter obstacles.",
+        img: "/biohacks/cards/sonicDisruptor.png"
     }
 
 ]
