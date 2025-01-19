@@ -86,7 +86,7 @@ export const gadgets: TGadget[] = [
             tradeExchangeLevel: "low"
         },
         shortDescription: "Enhance your vision with the Chromatic Eye Enhancer, experiencing vivid colors and augmented reality in any environment.",
-        img: "/biohacks/cards/chromaticEyeEnhancer.png"        
+        img: "/biohacks/cards/chromaticEyeEnhancer.png"
     },
     {
         id: 'f34545258',
@@ -127,13 +127,13 @@ export const gadgets: TGadget[] = [
             "Attach the Multi-tool Kit, which includes tools like a plasma cutter, data spike, and grappling hook.",
             "Integrate everything together and sync it with your neural network. Now you're ready to take on any challenge with your new Cybernetic Arm!"],
         description: {
-            info: "The Cybernetic Arm is the ultimate augmentation for the modern warrior. Constructed from Titanium Plates, it offers unparalleled strength and durability. Hydraulic Pistons provide enhanced power and flexibility, while Neural Interface Cables ensure that every movement is fluid and natural. The Multi-tool Kit transforms your arm into a versatile tool of survival, perfect for the dystopian streets of the future. Imagine the sensation of raw power at your fingertips, seamlessly integrated with your neural network, allowing you to crush obstacles and manipulate your environment with superhuman precision.", 
+            info: "The Cybernetic Arm is the ultimate augmentation for the modern warrior. Constructed from Titanium Plates, it offers unparalleled strength and durability. Hydraulic Pistons provide enhanced power and flexibility, while Neural Interface Cables ensure that every movement is fluid and natural. The Multi-tool Kit transforms your arm into a versatile tool of survival, perfect for the dystopian streets of the future. Imagine the sensation of raw power at your fingertips, seamlessly integrated with your neural network, allowing you to crush obstacles and manipulate your environment with superhuman precision.",
             sideEffects: "Initial integration may cause phantom limb sensations and discomfort. Long-term use can lead to neural fatigue and the risk of over-dependence on the augmentation.",
-            psychosisPossible: true,      
+            psychosisPossible: true,
             tradeExchangeLevel: "high"
         },
         shortDescription: "The Cybernetic Arm is the ultimate augmentation for the modern warrior. Constructed from Titanium Plates, it offers unparalleled strength and durability.",
-        img: "/biohacks/cards/cyberneticArm.png" 
+        img: "/biohacks/cards/cyberneticArm.png"
     },
     {
         id: 'f34545260',
