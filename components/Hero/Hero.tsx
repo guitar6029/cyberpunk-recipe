@@ -23,7 +23,37 @@ const stackImg = [
 const Hero: React.FC = () => {
 
   return (
-    <div className="flex flex-col bg-slate-900">
+    <div className="relative flex flex-col bg-slate-900">
+
+      {/* left side vertical top line */}
+      <div className="absolute top-5 left-5 bg-yellow-100 w-[5px] h-[25vh]"></div>
+
+      {/* left side vertical bottom line */}
+      <div className="absolute bottom-5 left-5 bg-yellow-100 w-[5px] h-[25vh]"></div>
+
+      {/* right side vertical top line */}
+      <div className="absolute top-5 right-5 bg-yellow-100 w-[5px] h-[25vh]"></div>
+
+      {/* right side vertical bottom line */}
+      <div className="absolute bottom-5 right-5 bg-yellow-100 w-[5px] h-[25vh] "></div>
+      
+      {/* bottom side characters */}
+      <div className="absolute bottom-5 right-[3.5rem]  w-[5px] h-[25vh] flex flex-col justify-center gap-2">
+        <div className="flex flex-row gap-2">
+          <div className="flex flex-col gap-2">
+          <div className="rounded-full w-[10px] h-[10px] bg-yellow-100"></div>
+        <div className="rounded-full w-[10px] h-[10px] bg-yellow-100"></div>
+        <div className="rounded-full w-[10px] h-[10px] bg-yellow-100"></div>
+          </div>
+          <div className="flex flex-col gap-2">
+          <div className="rounded-full w-[10px] h-[10px] bg-yellow-100"></div>
+        <div className="rounded-full w-[10px] h-[10px] bg-yellow-100"></div>
+        <div className="rounded-full w-[10px] h-[10px] bg-yellow-100"></div>
+          </div>
+        </div>
+        
+      </div>
+
 
       <div className="grid sm:grid-cols-1 md:grid-cols-2 bg-slate-900 p-4">
 
