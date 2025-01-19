@@ -1,11 +1,11 @@
 "use client";
 import { useState, useEffect } from 'react';
-import { ArrowUpRight, Barcode, Package, Axe, Bot } from 'lucide-react';
+import { Package, Axe, Bot } from 'lucide-react';
 import Link from 'next/link';
 
 /**
- * make a slider , 3 slides
- * with sldie indicator at the bottom
+ * make a slider , 5 slides
+ * with slider indicator at the bottom
  * add an animation
  * @returns 
  * 
@@ -68,8 +68,26 @@ const WhatIsHacks = () => {
 
     return (
         slides[currentSlide] ? (
-            <div className="bg-green-600 md:h-[50vh] flex flex-col">
+            <div className="relative bg-green-600 md:h-[50vh] flex flex-col">
+                
+                {/* top left corner */}
+                <div className="absolute top-0 left-0 bg-white w-[10px] h-[50px]"></div>
+                <div className="absolute -top-5 left-5 rotate-90 bg-white w-[10px] h-[50px]"></div>
+                
+                {/* top right corner */}
+                <div className="absolute top-0 right-0 bg-white w-[10px] h-[50px]"></div>
+                <div className="absolute -top-5 right-5 rotate-90 bg-white w-[10px] h-[50px]"></div>
+                
+                {/* bottom left corner */}
+                <div className="absolute bottom-0 left-0 bg-white w-[10px] h-[50px]"></div>
+                <div className="absolute -bottom-5 left-5 rotate-90 bg-white w-[10px] h-[50px]"></div>
+                
+                {/* bottom right corner */}
+                <div className="absolute bottom-0 right-0 bg-white w-[10px] h-[50px]"></div>
+                <div className="absolute -bottom-5 right-5 rotate-90 bg-white w-[10px] h-[50px]"></div>
 
+
+                
                 <div className="bg-green-600 md:h-[50vh] sm:flex flex-col  md:grid grid-cols-2 items-center sm:gap-5 md:gap-2 justify-center sm:p-6 md:p-4 ">
                     <div className="flex flex-col items-center gap-6 ">
                         <h1 className="md:text-5xl sm:text-2xl  uppercase col-span-1 font-bold">{slides[currentSlide].title}</h1>
