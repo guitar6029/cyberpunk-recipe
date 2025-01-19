@@ -27,7 +27,7 @@ const Biohacks = () => {
     return (
         <TemplateCorners cornerColor="bg-green-500">
             <div className="flex flex-grow items-center justify-between min-h-screen">
-                <ChevronLeft size={60} onClick={() => handleChangeSlide(-1)} className="text-green-500 cursor-pointer" />
+                <ChevronLeft size={160} onClick={() => handleChangeSlide(-1)} className="text-green-500 cursor-pointer" />
                 
                 <div className="flex flex-row items-center gap-10">
                     {/* Previous Slide */}
@@ -49,7 +49,7 @@ const Biohacks = () => {
                     </div>
                 </div>
                 
-                <ChevronRight size={60} onClick={() => handleChangeSlide(1)} className="text-green-500 cursor-pointer" />
+                <ChevronRight size={160} onClick={() => handleChangeSlide(1)} className="text-green-500 cursor-pointer" />
             </div>
         </TemplateCorners>
     );
