@@ -15,7 +15,7 @@ export const slides: TSlide[] = [
     },
     {
         id: 2,
-        title: "Metallica Hulk Hands",
+        title: "Metallic Hulk Hands",
         description: "Unleash immense strength with bionic arms reinforced with lightweight, high-strength alloy. Ideal for heavy lifting or combat situations.",
         
     },

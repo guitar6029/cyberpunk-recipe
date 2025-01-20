@@ -63,7 +63,7 @@ const Overview: React.FC = () => {
         <div className="col-span-1 flex flex-col items-center justify-center gap-5 text-yellow-200 p-4 font-bold">
 
           <div className="w-[50px] h-[10px] bg-yellow-200"></div>
-          <div className="flex  sm:flex-row md:flex-col gap-2">
+          <div className="flex  sm:flex-row md:flex-col gap-2 animate-pulse-once">
             {/* <h1 className="sm:text-xl md:text-4xl xl:text-7xl">Customized</h1> */}
             <SecondaryBtn btnText="Customized" />
             {/* <h1 className="sm:text-xl md:text-4xl xl:text-7xl">Hacks</h1> */}
@@ -72,7 +72,7 @@ const Overview: React.FC = () => {
 
 
 
-          <Link href="/biohacks" className="flex flex-row items-center gap-2 hover:underline">
+          <Link href="/biohacks" className="flex flex-row items-center gap-2 hover:underline animate-pulse-once">
 
             <span className="text-xl">Get Started</span>
 
@@ -94,7 +94,11 @@ const Overview: React.FC = () => {
 
             return (
 
-              <div key={index} className={`absolute transform skew-y-[${(initialSkewY) * index}] rounded-lg bg-slate-900`} style={{ top: `${(topPropertyInitial * index) + 10}px`, left: `${(leftPropertyInitial * index) + 10}px`, zIndex: index * 10 + 10 }}>
+              <div 
+                key={index} 
+                className={`absolute transform skew-y-[${(initialSkewY) * index}] 
+                rounded-lg bg-slate-900 animate-slide-in-left  `} 
+                style={{ top: `${(topPropertyInitial * index) + 10}px`, left: `${(leftPropertyInitial * index) + 10}px`, zIndex: index * 10 + 10 }}>
 
                 <Image className="hover:shadow-purple-600  hover:scale-105 transition duration-300 ease-in rounded-lg shadow-xl shadow-black" src={img} alt="cyberpunk" width={400} height={400} />
 
@@ -110,7 +114,7 @@ const Overview: React.FC = () => {
 
 
       <div className="grid sm:grid-cols-1 md:grid-cols-2 sm:gap-10">
-        <div className="group col-span-1 flex items-center justify-center md:p-5 relative order-2 md:order-1">
+        <div className="group col-span-1 flex items-center justify-center md:p-5 relative order-2 md:order-1 animate-slide-in-left">
           <div className="relative">
             <Image className="hover:shadow-purple-600  group-hover:scale-105 transition duration-300 ease-in skew-x-3 rounded-lg shadow-xl shadow-black" src={BlueprintBackdrop} alt="cyberpunk" width={400} style={{ zIndex: 0 }} />
 
@@ -121,7 +125,7 @@ const Overview: React.FC = () => {
         <div className=" col-span-1 flex flex-col items-center justify-center gap-5 text-yellow-200 p-4 font-bold order-1 md:order-2">
           <div className="flex flex-col items-center gap-2">
             <div className="w-[50px] h-[10px] bg-yellow-200"></div>
-            <div className="flex sm:flex-row md:flex-col gap-2">
+            <div className="flex sm:flex-row md:flex-col gap-2 animate-pulse-once">
               {/* <h1 className="sm:text-xl md:text-4xl xl:text-7xl">Customized</h1> */}
               <SecondaryBtn btnText="Blueprints" />
               {/* <h1 className="sm:text-xl md:text-4xl xl:text-7xl">Blueprints</h1> */}
