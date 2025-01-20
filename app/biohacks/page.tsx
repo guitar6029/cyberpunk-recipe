@@ -81,11 +81,11 @@ const Biohacks: React.FC = () => {
                 <div className="flex sm:flex-col lg:flex-row items-center gap-5 relative">
 
                     {/* Previous Slide */}
-                    <CardTemplate classString="cursor-pointer z-10  p-4 flex flex-col items-center justify-center gap-2 sm:w-[100px] sm:h-[150px] lg:w-[250px] lg:h-[300px] truncate rounded-lg shadow-lg shadow-stone-500 blur">
+                    <CardTemplate classString="z-10  p-4 flex flex-col items-center justify-center gap-2 sm:w-[100px] sm:h-[150px] lg:w-[250px] lg:h-[300px] truncate rounded-lg shadow-lg shadow-stone-500 blur">
                         <div className="flex flex-row gap-1 items-center">
                             <div className="flex flex-col gap-2">
                                 <div className="flex flex-row gap-2 items-center">
-                                    <span className="text-sm uppercase">{gadgets[previousIndex].id}</span>
+                                    <span className="text-sm uppercase">[{gadgets[previousIndex].id}</span>
                                     <Barcode size={20} />
                                 </div>
                                 <span className="text-sm text-yellow-300 font-bold">{gadgets[previousIndex].gadget}</span>
@@ -135,7 +135,7 @@ const Biohacks: React.FC = () => {
 
 
                     {/* Next Slide */}
-                    <CardTemplate classString="cursor-pointer z-10  p-4 flex flex-col items-center justify-center gap-2 sm:w-[100px] sm:h-[150px] lg:w-[250px] lg:h-[300px] truncate rounded-lg shadow-lg shadow-stone-500 blur">
+                    <CardTemplate classString="z-10  p-4 flex flex-col items-center justify-center gap-2 sm:w-[100px] sm:h-[150px] lg:w-[250px] lg:h-[300px] truncate rounded-lg shadow-lg shadow-stone-500 blur">
                         <div className="flex flex-row gap-1 items-center">
                             <div className="flex flex-col gap-2">
                                 <div className="flex flex-row gap-2 items-center">
@@ -152,10 +152,10 @@ const Biohacks: React.FC = () => {
                 </div>
 
                 {/* Navigation Buttons for the cards */}
-                <div className="flex sm:flex-col lg:flex-row items-center gap-4 justify-between text-3xl text-white">
-                    <ChevronLeft size={60} onClick={() => handleChangeSlide(-1)} className="text-green-500 cursor-pointer sm:rotate-90 lg:rotate-0   " />
+                <div className="flex flex-row items-center gap-4 justify-between text-3xl text-white">
+                    <ChevronLeft size={60} onClick={() => handleChangeSlide(-1)} className="text-green-500 cursor-pointer " />
                     <span className="text-green-500 text-xl font-bold">Navigate</span>
-                    <ChevronRight size={60} onClick={() => handleChangeSlide(1)} className="text-green-500 cursor-pointer sm:rotate-90 lg:rotate-0" />
+                    <ChevronRight size={60} onClick={() => handleChangeSlide(1)} className="text-green-500 cursor-pointer " />
                 </div>
 
             </div>

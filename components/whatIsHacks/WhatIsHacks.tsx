@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { Package, Axe, Bot } from 'lucide-react';
 import Link from 'next/link';
+import {slides} from '@/dummydata/slides';
 
 /**
  * make a slider , 5 slides
@@ -11,42 +12,7 @@ import Link from 'next/link';
  * 
  */
 
-type Slide = {
-    id: number,
-    title: string,
-    description: string
-    linkTo?: string
-}
 
-const slides: Slide[] = [
-    {
-        id: 1,
-        title: "Lorem ipsum 1",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, dolores.",
-        linkTo: "/about"
-    },
-    {
-        id: 2,
-        title: "Lorem ipsum 2",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, dolores.",
-    },
-    {
-        id: 3,
-        title: "Lorem ipsum 3",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, dolores.",
-    },
-    {
-        id: 4,
-        title: "Lorem ipsum 4",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, dolores.",
-        linkTo: "/biohacks"
-    },
-    {
-        id: 5,
-        title: "Lorem ipsum 5",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, dolores.",
-    }
-]
 
 const WhatIsHacks = () => {
 
@@ -71,20 +37,20 @@ const WhatIsHacks = () => {
             <div className="relative bg-green-600 md:h-[50vh] flex flex-col">
                 
                 {/* top left corner */}
-                <div className="absolute top-0 left-0 bg-white w-[10px] h-[50px]"></div>
-                <div className="absolute -top-5 left-5 rotate-90 bg-white w-[10px] h-[50px]"></div>
+                <div className="absolute top-0 left-0 bg-white w-[5px] h-[50px]"></div>
+                <div className="absolute -top-6 left-5 rotate-90 bg-white w-[5px] h-[50px]"></div>
                 
                 {/* top right corner */}
-                <div className="absolute top-0 right-0 bg-white w-[10px] h-[50px]"></div>
-                <div className="absolute -top-5 right-5 rotate-90 bg-white w-[10px] h-[50px]"></div>
+                <div className="absolute top-0 right-0 bg-white w-[5px] h-[50px]"></div>
+                <div className="absolute -top-6 right-5 rotate-90 bg-white w-[5px] h-[50px]"></div>
                 
                 {/* bottom left corner */}
-                <div className="absolute bottom-0 left-0 bg-white w-[10px] h-[50px]"></div>
-                <div className="absolute -bottom-5 left-5 rotate-90 bg-white w-[10px] h-[50px]"></div>
+                <div className="absolute bottom-0 left-0 bg-white w-[5px] h-[50px]"></div>
+                <div className="absolute -bottom-6 left-5 rotate-90 bg-white w-[5px] h-[50px]"></div>
                 
                 {/* bottom right corner */}
-                <div className="absolute bottom-0 right-0 bg-white w-[10px] h-[50px]"></div>
-                <div className="absolute -bottom-5 right-5 rotate-90 bg-white w-[10px] h-[50px]"></div>
+                <div className="absolute bottom-0 right-0 bg-white w-[5px] h-[50px]"></div>
+                <div className="absolute -bottom-6 right-5 rotate-90 bg-white w-[5px] h-[50px]"></div>
 
 
                 

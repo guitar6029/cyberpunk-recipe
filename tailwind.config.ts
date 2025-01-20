@@ -8,6 +8,10 @@ export default {
   ],
   theme: {
     extend: {
+      skew: {
+        "negative-10": "10deg",
+        "10": "10deg",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
