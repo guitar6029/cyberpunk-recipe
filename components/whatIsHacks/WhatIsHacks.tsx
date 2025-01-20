@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { Package, Axe, Bot } from 'lucide-react';
 import Link from 'next/link';
-import {slides} from '@/dummydata/slides';
+import {slides, TSlide} from '@/dummydata/slides';
 
 /**
  * make a slider , 5 slides
@@ -42,7 +42,7 @@ const WhatIsHacks = () => {
                 
                 {/* top right corner */}
                 <div className="absolute top-0 right-0 bg-white w-[5px] h-[50px]"></div>
-                <div className="absolute -top-6 right-5 rotate-90 bg-white w-[5px] h-[50px]"></div>
+                <div className="absolute -top-6 right-6 rotate-90 bg-white w-[5px] h-[50px]"></div>
                 
                 {/* bottom left corner */}
                 <div className="absolute bottom-0 left-0 bg-white w-[5px] h-[50px]"></div>
@@ -50,7 +50,7 @@ const WhatIsHacks = () => {
                 
                 {/* bottom right corner */}
                 <div className="absolute bottom-0 right-0 bg-white w-[5px] h-[50px]"></div>
-                <div className="absolute -bottom-6 right-5 rotate-90 bg-white w-[5px] h-[50px]"></div>
+                <div className="absolute -bottom-6 right-6 rotate-90 bg-white w-[5px] h-[50px]"></div>
 
 
                 
@@ -85,7 +85,7 @@ const WhatIsHacks = () => {
                 </div>
 
                 <div className="flex flex-row items-center justify-center p-4">
-                    {slides.map((slide: Slide, index: number) => {
+                    {slides.map((slide: TSlide, index: number) => {
                         return (
                             <div onClick={() => setCurrentSlide(index)} className={index === currentSlide ? "w-3 h-3 bg-black rounded-full mx-2" : "w-3 h-3 bg-white rounded-full mx-2"} key={index}></div>
                         )
