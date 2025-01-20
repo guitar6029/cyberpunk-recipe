@@ -71,13 +71,13 @@ const Biohacks: React.FC = () => {
     }, [currentBiohack])
 
     return (
-        <TemplateCorners cornerColor="bg-green-500">
-            <div className="mt-5 text-center text-yellow-200 text-7xl font-bold flex flex-row items-baseline justify-center">
-                <span>Bi</span>
-                <CircleDot size={40} className="hover:animate-pulse transition-all duration-100 ease-in-out" />
-                <span>hacks</span>
-            </div>
-            <div className="flex flex-grow flex-col items-center gap-[10rem] justify-center min-h-screen">
+        <TemplateCorners minHScreen={false} cornerColor="bg-green-500">
+            <div className="flex flex-grow flex-col items-center gap-[10rem] justify-center ">
+                <div className="mt-5 text-center text-yellow-200 text-7xl font-bold flex flex-row items-baseline justify-center">
+                    <span>Bi</span>
+                    <CircleDot size={40} className="hover:animate-pulse transition-all duration-100 ease-in-out" />
+                    <span>hacks</span>
+                </div>
                 <div className="flex sm:flex-col lg:flex-row items-center gap-5 relative">
 
                     {/* Previous Slide */}
@@ -100,37 +100,37 @@ const Biohacks: React.FC = () => {
 
                     {/* Current Slide */}
                     <CardTemplate classString="bg-black cursor-pointer relative z-40 p-4 flex flex-col w-[400px] h-[500px] truncate rounded-lg shadow-xl shadow-purple-400 scale-125" >
-                        <Link href={"/biohacks/" + gadgets[currentBiohack].id  } className="flex flex-col gap-2 ">
-                        <div className="flex flex-row items-center justify-between">
-                            <div className="flex flex-row gap-1 items-center">
+                        <Link href={"/biohacks/" + gadgets[currentBiohack].id} className="flex flex-col gap-2 ">
+                            <div className="flex flex-row items-center justify-between">
+                                <div className="flex flex-row gap-1 items-center">
 
-                                <div className="flex flex-col gap-2">
-                                    <div className="flex flex-row gap-2 items-center">
-                                        <span className="text-sm uppercase">{gadgets[currentBiohack].id}</span>
-                                        <Barcode size={20} />
+                                    <div className="flex flex-col gap-2">
+                                        <div className="flex flex-row gap-2 items-center">
+                                            <span className="text-sm uppercase">{gadgets[currentBiohack].id}</span>
+                                            <Barcode size={20} />
+                                        </div>
+                                        <span className="text-sm text-yellow-300 font-bold">{gadgets[currentBiohack].gadget}</span>
                                     </div>
-                                    <span className="text-sm text-yellow-300 font-bold">{gadgets[currentBiohack].gadget}</span>
+
+
                                 </div>
-
-
+                                <div className="flex flex-row gap-2 items-center">
+                                    {gadgets[currentBiohack].description.psychosisPossible ? <Skull className="text-yellow-200" size={20} /> : null}
+                                    <div className={`rounded-full w-2 h-2 ${getTradeLevelBgColor(gadgets[currentBiohack].description.tradeExchangeLevel)}`}></div>
+                                </div>
                             </div>
-                            <div className="flex flex-row gap-2 items-center">
-                                {gadgets[currentBiohack].description.psychosisPossible ? <Skull className="text-yellow-200" size={20} /> : null}
-                                <div className={`rounded-full w-2 h-2 ${getTradeLevelBgColor(gadgets[currentBiohack].description.tradeExchangeLevel)}`}></div>
+                            <div className="flex flex-col gap-2 p-4 h-full rounded-lg">
+
+                                <Image className="rounded-full w-full shadow-md shadow-yellow-200" width={200} height={200} src={gadgets[currentBiohack].img} alt={gadgets[currentBiohack].gadget} />
                             </div>
-                        </div>
-                        <div className="flex flex-col gap-2 p-4 h-full rounded-lg">
 
-                            <Image className="rounded-full w-full shadow-md shadow-yellow-200" width={200} height={200} src={gadgets[currentBiohack].img} alt={gadgets[currentBiohack].gadget} />
-                        </div>
-
-                        <div className="w-[2vw] h-1 bg-yellow-200"></div>
-                        <div className="w-[2vw] h-1 bg-yellow-200"></div>
-                        <div className="w-[5vw] h-1 bg-yellow-200"></div>
+                            <div className="w-[2vw] h-1 bg-yellow-200"></div>
+                            <div className="w-[2vw] h-1 bg-yellow-200"></div>
+                            <div className="w-[5vw] h-1 bg-yellow-200"></div>
 
                         </Link>
-                        
-                        
+
+
                     </CardTemplate>
 
 
