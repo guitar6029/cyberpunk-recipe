@@ -9,29 +9,33 @@ export type TSlide = {
 export const slides: TSlide[] = [
     {
         id: 1,
-        title: "Lorem ipsum 1",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, dolores.",
-        linkTo: "/about"
+        title: "Neon Vision Goggles",
+        description: "Dive into the depths of the urban jungle with augmented vision that allows you to see in low light conditions and highlights critical elements in the environment.",
+       
     },
     {
         id: 2,
-        title: "Lorem ipsum 2",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, dolores.",
+        title: "Metallica Hulk Hands",
+        description: "Unleash immense strength with bionic arms reinforced with lightweight, high-strength alloy. Ideal for heavy lifting or combat situations.",
+        
     },
     {
         id: 3,
-        title: "Lorem ipsum 3",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, dolores.",
-    },
-    {
-        id: 4,
-        title: "Lorem ipsum 4",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, dolores.",
+        title: "Stealth Cloak",
+        description: "Become a shadow with this adaptive camouflage cloak that bends light around you, rendering you nearly invisible.",
         linkTo: "/biohacks"
     },
     {
+        id: 4,
+        title: "Cybernetic Memory Enhancer",
+        description: "Enhance your cognitive capabilities and never forget a detail with this advanced neural implant.",
+        linkTo: "/memory-enhancer"
+    },
+    {
         id: 5,
-        title: "Lorem ipsum 5",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, dolores.",
+        title: "Bio-Luminescent Skin",
+        description: "Stand out in the crowd with skin that can emit light and display patterns. Customizable through an app interface.",
+        
     }
-]
+];
+

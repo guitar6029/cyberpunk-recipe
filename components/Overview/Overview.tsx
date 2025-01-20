@@ -6,6 +6,7 @@ import { ArrowUpRight } from 'lucide-react';
 
 import BluePrintImg from '@/public/biohacks/blueprint.png';
 import BlueprintBackdrop from '@/public/biohacks/neuralnterfaceHackChip.png';
+import SecondaryBtn from "../Buttons/Nav/SecondaryBtn";
 
 
 const stackImg = [
@@ -64,7 +65,8 @@ const Overview: React.FC = () => {
           <div className="w-[50px] h-[10px] bg-yellow-200"></div>
           <div className="flex  sm:flex-row md:flex-col gap-2">
             {/* <h1 className="sm:text-xl md:text-4xl xl:text-7xl">Customized</h1> */}
-            <h1 className="sm:text-xl md:text-4xl xl:text-7xl">Hacks</h1>
+            <SecondaryBtn btnText="Customized" />
+            {/* <h1 className="sm:text-xl md:text-4xl xl:text-7xl">Hacks</h1> */}
 
           </div>
 
@@ -121,7 +123,8 @@ const Overview: React.FC = () => {
             <div className="w-[50px] h-[10px] bg-yellow-200"></div>
             <div className="flex sm:flex-row md:flex-col gap-2">
               {/* <h1 className="sm:text-xl md:text-4xl xl:text-7xl">Customized</h1> */}
-              <h1 className="sm:text-xl md:text-4xl xl:text-7xl">Blueprints</h1>
+              <SecondaryBtn btnText="Blueprints" />
+              {/* <h1 className="sm:text-xl md:text-4xl xl:text-7xl">Blueprints</h1> */}
             </div>
           </div>
 

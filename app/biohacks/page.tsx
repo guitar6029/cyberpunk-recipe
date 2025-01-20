@@ -71,7 +71,7 @@ const Biohacks: React.FC = () => {
     }, [currentBiohack])
 
     return (
-        <TemplateCorners minHScreen={false} cornerColor="bg-green-500">
+        <TemplateCorners minHScreen={false} cornerColor="bg-slate-800">
             <div className="flex flex-grow flex-col items-center gap-[10rem] justify-center ">
                 <div className="mt-5 text-center text-yellow-200 text-7xl font-bold flex flex-row items-baseline justify-center">
                     <span>Bi</span>

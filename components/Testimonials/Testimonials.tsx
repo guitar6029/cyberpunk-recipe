@@ -8,7 +8,7 @@ const Testimonials = () => {
            {/* <h1 className="font-extrabold text-5xl uppercase p-3 ">What our users say</h1> */}
             {testimonials && testimonials.map((person: TTestimonial, index: number) => {
                 return (
-                    <div className="sm:col-span-3 xl:col-span-1 " key={index}>
+                    <div className="sm:col-span-3 2xl:col-span-1" key={index}>
                         <Testimonial  person={person} /> 
                     </div>
                 )
