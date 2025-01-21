@@ -72,7 +72,7 @@ const WhatIsHacks = () => {
 
 
 
-                <div className="bg-black h-fit sm:flex-col sm:gap-10 md:flex-col md:grid grid-cols-2 items-center md:gap-2 justify-center sm:p-6 md:p-4 ">
+                <div className="bg-black h-fit sm:flex-col sm:gap-10 md:flex-col items-center md:gap-2 justify-center sm:p-6 md:p-4 ">
                     <div className="flex flex-col items-center gap-6 ">
                         <h1 className="min-h-[4rem] md:text-5xl sm:text-2xl  uppercase col-span-1 font-bold text-center text-gray-for-dark-drop">{slides[currentSlide].title}</h1>
                         <div className="flex flex-row items-center gap-10">
@@ -98,8 +98,8 @@ const WhatIsHacks = () => {
                             ) : null}
 
                         </div>
+                        <p className="col-span-1 text-2xl text-center text-gray-for-dark-drop min-h-[4rem]">{slides[currentSlide].description}</p>
                     </div>
-                    <p className="col-span-1 text-2xl text-center text-gray-for-dark-drop min-h-[4rem]">{slides[currentSlide].description}</p>
                 </div>
 
                 <div className="flex flex-row items-center justify-center p-4 gap-10 sm:mb-10">
