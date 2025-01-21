@@ -2,6 +2,7 @@
 
 import { TTestimonial } from "@/dummydata/testimonials";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 type TestimonialProps = {
     person: TTestimonial
@@ -71,7 +72,9 @@ const Testimonial: React.FC<TestimonialProps> = ({ person }: TestimonialProps) =
 
                             >
                             </div>
-                            <img
+                            <Image
+                                width={100}
+                                height={100}
                                 src={person.img}
                                 alt={person.name}
                                 className="z-20 rounded-full shadow-xl  shadow-black border-2 border-pink-200 w-[8rem] md:w-[12rem] "
@@ -91,10 +94,10 @@ const Testimonial: React.FC<TestimonialProps> = ({ person }: TestimonialProps) =
                             <span className="text-2xl">/</span>
                             <span className="text-2xl">/</span>
                         </div>
-                        
-                        
+
+
                     </div>
-                    
+
                 </div>
             </div>
 
