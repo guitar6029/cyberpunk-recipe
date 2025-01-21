@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import NavLink from '@/components/Buttons/Nav/NavLink';
+import NavLink from '../components/Buttons/Nav/NavLink';
+
 const Custom404 = () => {
     return (
         <div className="flex flex-col items-center justify-center h-screen bg-black text-white">

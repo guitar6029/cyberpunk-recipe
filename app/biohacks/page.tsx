@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { gadgets } from "@/dummydata/hacks";
 import Link from "next/link";
 import { Skull, CircleDot, ChevronLeft, ChevronRight, Barcode } from 'lucide-react';
@@ -20,23 +20,23 @@ const Biohacks: React.FC = () => {
             return "bg-red-200";
         }
     }
-    0
+    
 
-    const handleChangeSlide = (direction: number) => {
+    const handleChangeSlide = useCallback((direction: number) => {
         if (direction === 1) {
-            let currentIndex = currentBiohack + 1 >= gadgets.length ? 0 : currentBiohack + 1;
+            const currentIndex = currentBiohack + 1 >= gadgets.length ? 0 : currentBiohack + 1;
             setCurrentBiohack(currentIndex);
         } else {
-            let currentIndex = currentBiohack - 1 < 0 ? gadgets.length - 1 : currentBiohack - 1;
+            const currentIndex = currentBiohack - 1 < 0 ? gadgets.length - 1 : currentBiohack - 1;
             setCurrentBiohack(currentIndex);
         }
-    }
+    }, [currentBiohack]);
 
     const previousIndex = currentBiohack - 1 < 0 ? gadgets.length - 1 : currentBiohack - 1;
     const nextIndex = currentBiohack + 1 >= gadgets.length ? 0 : currentBiohack + 1;
 
 
-    //add event listner for left and right arrow
+
     useEffect(() => {
 
 
@@ -47,15 +47,7 @@ const Biohacks: React.FC = () => {
                 handleChangeSlide(1);
             }
 
-            // //watch for small screen
-            // if (window.matchMedia("(max-width: 640px)").matches) {
 
-            //     if (event.key === 'ArrowUp') {
-            //         handleChangeSlide(-1);
-            //     } else if (event.key === 'ArrowDown') {
-            //         handleChangeSlide(1);
-            //     }
-            // }
 
 
         }
@@ -68,7 +60,7 @@ const Biohacks: React.FC = () => {
         }
 
 
-    }, [currentBiohack])
+    }, [currentBiohack, handleChangeSlide]);
 
     return (
         <TemplateCorners minHScreen={false} cornerColor="bg-slate-800">

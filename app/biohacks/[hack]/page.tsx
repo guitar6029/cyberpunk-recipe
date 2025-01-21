@@ -1,7 +1,6 @@
 "use client";
 import { useParams } from 'next/navigation';
 import { useState, useEffect } from 'react';
-import CardTemplate from "@/components/Card/CardTemplate";
 import TemplateCorners from "@/components/Template/TemplateCorners";
 import { gadgets, TGadget } from "@/dummydata/hacks";
 import { Skull, MoveLeft, Bot } from 'lucide-react';

@@ -1,10 +1,6 @@
 import Image from "next/image";
-
 import Link from "next/link";
-
 import { ArrowUpRight } from 'lucide-react';
-
-import BluePrintImg from '@/public/biohacks/blueprint.png';
 import BlueprintBackdrop from '@/public/biohacks/neuralnterfaceHackChip.png';
 import SecondaryBtn from "../Buttons/Nav/SecondaryBtn";
 
