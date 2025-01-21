@@ -99,7 +99,7 @@ const WhatIsHacks = () => {
 
                         </div>
                     </div>
-                    <p className="col-span-1 text-2xl text-gray-for-dark-drop min-h-[4rem]">{slides[currentSlide].description}</p>
+                    <p className="col-span-1 text-2xl text-center text-gray-for-dark-drop min-h-[4rem]">{slides[currentSlide].description}</p>
                 </div>
 
                 <div className="flex flex-row items-center justify-center p-4 gap-10 sm:mb-10">
