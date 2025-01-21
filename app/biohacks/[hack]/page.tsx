@@ -44,7 +44,7 @@ const HackDetails: React.FC = () => {
             <div className="flex flex-col items-center justify-center p-4">
                 <div className="flex flex-row items-center justify-center">
                     <Bot size={40} />
-                    <h1>Oops, something went wrong</h1>
+                    <h1>Loading gadget or something went wrong</h1>
                 </div>
             </div>
         );
@@ -96,7 +96,7 @@ const HackDetails: React.FC = () => {
                             width={500}
                             height={200}
                         />
-                        <p className="text-xl leading-relaxed">{gadget?.description.info}</p>
+                        <p className="text-xl leading-relaxed text-gray-for-dark-drop">{gadget?.description.info}</p>
                     </div>
                 </div>
                 <div className="relative flex flex-col gap-4 bg-slate-800 p-4">
@@ -118,7 +118,7 @@ const HackDetails: React.FC = () => {
                     <div className="absolute top-0 right-4 w-[.175vw] h-[.6rem] bg-yellow-200"></div>
 
                     <h1 className="text-3xl font-bold">Ingredients</h1>
-                    <ul className="flex flex-col gap-4">
+                    <ul className="flex flex-col gap-4 text-gray-for-dark-drop">
                         {gadget?.ingredients.map((ingredient: string, index: number) => (
                             <li className="text-xl" key={index}>{ingredient}</li>
                         ))}
@@ -142,7 +142,7 @@ const HackDetails: React.FC = () => {
                     <div className="absolute top-0 right-2 w-[.175vw] h-[1.6rem] bg-yellow-200"></div>
                     <div className="absolute top-0 right-4 w-[.175vw] h-[.6rem] bg-yellow-200"></div>
                     <h1 className="text-3xl font-bold">Steps</h1>
-                    <ul className="flex flex-col gap-4">
+                    <ul className="flex flex-col gap-4 text-gray-for-dark-drop">
                         {gadget?.instructions.map((step: string, index: number) => (
                             <li key={index}>{step}</li>
                         ))}
