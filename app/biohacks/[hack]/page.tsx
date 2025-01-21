@@ -59,7 +59,7 @@ const HackDetails: React.FC = () => {
             <div className="col-span-1 flex flex-col gap-4">
 
 
-                <div className="relative flex flex-col gap-4 rounded-lg bg-slate-800 p-4">
+                <div className="relative flex flex-col gap-4 rounded-lg  p-4">
 
                     {/* top left extra shape */}
                     <div className="absolute top-0 left-0 w-[.5rem] h-[.5rem] bg-yellow-200"></div>
@@ -99,7 +99,7 @@ const HackDetails: React.FC = () => {
                         <p className="text-xl leading-relaxed text-gray-for-dark-drop">{gadget?.description.info}</p>
                     </div>
                 </div>
-                <div className="relative flex flex-col gap-4 bg-slate-800 p-4">
+                <div className="relative flex flex-col gap-4 p-4">
 
                     {/* top left extra shape */}
                     <div className="absolute top-0 left-0 w-[.5rem] h-[.5rem] bg-yellow-200"></div>
@@ -124,7 +124,7 @@ const HackDetails: React.FC = () => {
                         ))}
                     </ul>
                 </div>
-                <div className="relative flex flex-col gap-4 bg-slate-800 p-4">
+                <div className="relative flex flex-col gap-4 p-4">
 
                     {/* top left extra shape */}
                     <div className="absolute top-0 left-0 w-[.5rem] h-[.5rem] bg-yellow-200"></div>
