@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 import TemplateCorners from "@/components/Template/TemplateCorners";
 import { gadgets, TGadget } from "@/dummydata/hacks";
 import { Skull, MoveLeft, Bot } from 'lucide-react';
-import Image from 'next/image';
 import Link from 'next/link';
 
 const HackDetails: React.FC = () => {
@@ -89,13 +88,7 @@ const HackDetails: React.FC = () => {
                     </div>
                     <h1 className="text-3xl font-bold">{gadget?.gadget}</h1>
                     <div className="relative">
-                        {/* <Image
-                            className="float-right mr-4 mb-2 rounded-full shadow-lg shadow-purple-500 w-[20%]"
-                            src={gadget?.img ?? ""}
-                            alt={gadget?.gadget ?? ""}
-                            width={500}
-                            height={200}
-                        /> */}
+                       
                         <p className="text-xl leading-relaxed text-gray-for-dark-drop">{gadget?.description.info}</p>
                     </div>
                 </div>
