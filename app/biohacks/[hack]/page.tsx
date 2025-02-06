@@ -11,12 +11,17 @@ const HackDetails: React.FC = () => {
     const params = useParams();
     const { hack } = params;
     const [gadget, setGadget] = useState<TGadget | null>(null);
+    const [ loading, setLoading ] = useState(true);
 
     useEffect(() => {
         const timeoutId = setTimeout(() => {
             const findGadget = gadgets.find((gadget: TGadget) => gadget.id === hack);
             if (findGadget) {
                 setGadget(findGadget);
+                setLoading(false);
+            } else {
+                setGadget(null);
+                setLoading(false);
             }
         }, 1500);
 
@@ -39,12 +44,12 @@ const HackDetails: React.FC = () => {
         }
     }
 
-    if (!gadget) {
+    if (loading) {
         return (
             <div className="flex flex-col items-center justify-center p-4">
-                <div className="flex flex-row items-center justify-center">
+                <div className="flex flex-row items-center justify-center min-h-screen">
                     <Bot size={40} />
-                    <h1>Loading gadget or something went wrong</h1>
+                    <h1 className="text-3xl font-bold">Loading gadget . . .</h1>
                 </div>
             </div>
         );

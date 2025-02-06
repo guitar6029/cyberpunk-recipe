@@ -91,7 +91,7 @@ const Biohacks: React.FC = () => {
 
 
                     {/* Current Slide */}
-                    <CardTemplate classString="bg-black cursor-pointer relative z-40 p-4 flex flex-col w-[400px] h-[500px] truncate rounded-lg shadow-xl shadow-purple-400 scale-125" >
+                    <CardTemplate  classString="bg-black cursor-pointer relative z-40 p-4 flex flex-col w-[400px] h-[500px] truncate rounded-lg shadow-xl shadow-purple-400 scale-125" >
                         <Link href={"/biohacks/" + gadgets[currentBiohack].id} className="flex flex-col gap-2 ">
                             <div className="flex flex-row items-center justify-between">
                                 <div className="flex flex-row gap-1 items-center">
