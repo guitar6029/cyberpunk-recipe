@@ -56,15 +56,19 @@ const HackDetails: React.FC = () => {
     }
 
     return (
-        <TemplateCorners minHScreen={false} cornerColor="bg-yellow-200">
-            <Link href="/biohacks" className="group flex flex-row gap-2 p-4 items-center w-fit">
+        <TemplateCorners minHScreen={false} cornerColor="bg-transparent">
+            <Link href="/biohacks" className="group flex flex-row gap-2 p-4 items-center w-fit cursor-pointer">
                 <MoveLeft size={60} className="group-hover:text-green-500 transition duration-150 ease-in" />
-                <span className="text-3xl font-bold group-hover:text-green-500 transition duration-150 ease-in">Go back</span>
+                <span className="text-3xl font-bold group-hover:text-green-500 transition duration-150 ease-in cursor-pointer!">Go back</span>
             </Link>
             <div className="col-span-1 flex flex-col gap-4">
 
 
                 <div className="relative flex flex-col gap-4 rounded-lg  p-4">
+
+                    {/* background div block */}
+                    <div style={{ zIndex: -1, backgroundImage: `url(${gadget?.img})`, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }} className="absolute w-[50%] h-[120vh] bg-yellow-100 opacity-10 rounded-md top-0 right-0"></div>
+                    <div style={{ zIndex: -1 }} className="absolute w-[10%] h-[120vh] bg-yellow-100 opacity-10 rounded-md bottom-0 left-0"></div>
 
                     {/* top left extra shape */}
                     <div className="absolute top-0 left-0 w-[.5rem] h-[.5rem] bg-yellow-200"></div>
@@ -94,13 +98,13 @@ const HackDetails: React.FC = () => {
                     </div>
                     <h1 className="text-3xl font-bold">{gadget?.gadget}</h1>
                     <div className="relative">
-                        <Image
+                        {/* <Image
                             className="float-right mr-4 mb-2 rounded-full shadow-lg shadow-purple-500 w-[20%]"
                             src={gadget?.img ?? ""}
                             alt={gadget?.gadget ?? ""}
                             width={500}
                             height={200}
-                        />
+                        /> */}
                         <p className="text-xl leading-relaxed text-gray-for-dark-drop">{gadget?.description.info}</p>
                     </div>
                 </div>
@@ -130,6 +134,8 @@ const HackDetails: React.FC = () => {
                     </ul>
                 </div>
                 <div className="relative flex flex-col gap-4 p-4">
+
+                <div style={{ zIndex: -1 }} className="absolute w-[10%] h-[50vh] bg-yellow-100 opacity-10 rounded-md bottom-50 left-50"></div>
 
                     {/* top left extra shape */}
                     <div className="absolute top-0 left-0 w-[.5rem] h-[.5rem] bg-yellow-200"></div>
