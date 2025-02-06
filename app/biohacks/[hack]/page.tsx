@@ -11,11 +11,12 @@ const HackDetails: React.FC = () => {
     const params = useParams();
     const { hack } = params;
     const [gadget, setGadget] = useState<TGadget | null>(null);
-    const [ loading, setLoading ] = useState(true);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const timeoutId = setTimeout(() => {
             const findGadget = gadgets.find((gadget: TGadget) => gadget.id === hack);
+
             if (findGadget) {
                 setGadget(findGadget);
                 setLoading(false);
@@ -23,7 +24,7 @@ const HackDetails: React.FC = () => {
                 setGadget(null);
                 setLoading(false);
             }
-        }, 1500);
+        }, 4500);
 
         return () => clearTimeout(timeoutId);
     }, [hack]);
@@ -47,9 +48,14 @@ const HackDetails: React.FC = () => {
     if (loading) {
         return (
             <div className="flex flex-col items-center justify-center p-4">
-                <div className="flex flex-row items-center justify-center min-h-screen">
-                    <Bot size={40} />
-                    <h1 className="text-3xl font-bold">Loading gadget . . .</h1>
+                <div className="flex flex-row gap-2 items-center justify-center min-h-screen">
+                    <Bot size={40} className="animate-bounce" />
+                    <h1 className="text-3xl font-bold">Loading gadget</h1>
+                    <span className="animate-bounce delay-75">.</span>
+                    <span className="animate-bounce delay-100">.</span>
+                    <span className="animate-bounce delay-150">.</span>
+
+
                 </div>
             </div>
         );
@@ -67,24 +73,9 @@ const HackDetails: React.FC = () => {
                 <div className="relative flex flex-col gap-4 rounded-lg  p-4">
 
                     {/* background div block */}
-                    <div style={{ zIndex: -1, backgroundImage: `url(${gadget?.img})`, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }} className="absolute w-[50%] h-[120vh] bg-yellow-100 opacity-10 rounded-md top-0 right-0"></div>
+                    <div style={{ zIndex: -1, backgroundImage: `url(${gadget?.img})`, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }} className="absolute w-[50%] h-[120vh] rounded-lg bg-yellow-100 opacity-30 top-10 right-20"></div>
                     <div style={{ zIndex: -1 }} className="absolute w-[10%] h-[120vh] bg-yellow-100 opacity-10 rounded-md bottom-0 left-0"></div>
 
-                    {/* top left extra shape */}
-                    <div className="absolute top-0 left-0 w-[.5rem] h-[.5rem] bg-yellow-200"></div>
-
-                    {/* bottom left extra shape */}
-                    <div className="absolute bottom-0 left-0 w-[.5rem] h-[.5rem] bg-yellow-200"></div>
-
-                    {/* bottom right extras */}
-                    <div className="absolute bottom-0 right-0 w-[.175vw] h-[2.6rem] bg-yellow-200"></div>
-                    <div className="absolute bottom-0 right-2 w-[.175vw] h-[1.6rem] bg-yellow-200"></div>
-                    <div className="absolute bottom-0 right-4 w-[.175vw] h-[.6rem] bg-yellow-200"></div>
-
-                    {/* top right extras */}
-                    <div className="absolute top-0 right-0 w-[.175vw] h-[2.6rem] bg-yellow-200"></div>
-                    <div className="absolute top-0 right-2 w-[.175vw] h-[1.6rem] bg-yellow-200"></div>
-                    <div className="absolute top-0 right-4 w-[.175vw] h-[.6rem] bg-yellow-200"></div>
 
                     <div className="flex flex-row items-center gap-2">
                         <h1 className="text-3xl font-bold">{gadget?.id} </h1>
@@ -110,52 +101,26 @@ const HackDetails: React.FC = () => {
                 </div>
                 <div className="relative flex flex-col gap-4 p-4">
 
-                    {/* top left extra shape */}
-                    <div className="absolute top-0 left-0 w-[.5rem] h-[.5rem] bg-yellow-200"></div>
 
-                    {/* bottom left extra shape */}
-                    <div className="absolute bottom-0 left-0 w-[.5rem] h-[.5rem] bg-yellow-200"></div>
-
-                    {/* bottom right extras */}
-                    <div className="absolute bottom-0 right-0 w-[.175vw] h-[2.6rem] bg-yellow-200"></div>
-                    <div className="absolute bottom-0 right-2 w-[.175vw] h-[1.6rem] bg-yellow-200"></div>
-                    <div className="absolute bottom-0 right-4 w-[.175vw] h-[.6rem] bg-yellow-200"></div>
-
-                    {/* top right extras */}
-                    <div className="absolute top-0 right-0 w-[.175vw] h-[2.6rem] bg-yellow-200"></div>
-                    <div className="absolute top-0 right-2 w-[.175vw] h-[1.6rem] bg-yellow-200"></div>
-                    <div className="absolute top-0 right-4 w-[.175vw] h-[.6rem] bg-yellow-200"></div>
 
                     <h1 className="text-3xl font-bold">Ingredients</h1>
                     <ul className="flex flex-col gap-4 text-gray-for-dark-drop">
                         {gadget?.ingredients.map((ingredient: string, index: number) => (
-                            <li className="text-xl" key={index}>{ingredient}</li>
+                            <li className="text-xl flex flex-row items-center gap-2" key={index}>
+                                <span className='font-bold flex flex-row items-center justify-center text-2xl p-2 bg-yellow-200 rounded-full w-[5rem] h-[5rem] text-black'>{ingredient.split("x ")[0]}X</span>
+                                <span className="text-xl font-bold text-white">{ingredient.split("x ")[1]}</span>
+                            </li>
                         ))}
                     </ul>
                 </div>
-                <div className="relative flex flex-col gap-4 p-4">
+                <div className="relative flex flex-col gap-4 p-4 bg-gray-700 rounded-lg text-white">
 
-                <div style={{ zIndex: -1 }} className="absolute w-[10%] h-[50vh] bg-yellow-100 opacity-10 rounded-md bottom-50 left-50"></div>
+                    <div style={{ zIndex: -1 }} className="absolute w-[10%] h-[50vh] bg-yellow-100 opacity-10 rounded-md bottom-50 left-50"></div>
 
-                    {/* top left extra shape */}
-                    <div className="absolute top-0 left-0 w-[.5rem] h-[.5rem] bg-yellow-200"></div>
-
-                    {/* bottom left extra shape */}
-                    <div className="absolute bottom-0 left-0 w-[.5rem] h-[.5rem] bg-yellow-200"></div>
-
-                    {/* bottom right extras */}
-                    <div className="absolute bottom-0 right-0 w-[.175vw] h-[2.6rem] bg-yellow-200"></div>
-                    <div className="absolute bottom-0 right-2 w-[.175vw] h-[1.6rem] bg-yellow-200"></div>
-                    <div className="absolute bottom-0 right-4 w-[.175vw] h-[.6rem] bg-yellow-200"></div>
-
-                    {/* top right extras */}
-                    <div className="absolute top-0 right-0 w-[.175vw] h-[2.6rem] bg-yellow-200"></div>
-                    <div className="absolute top-0 right-2 w-[.175vw] h-[1.6rem] bg-yellow-200"></div>
-                    <div className="absolute top-0 right-4 w-[.175vw] h-[.6rem] bg-yellow-200"></div>
                     <h1 className="text-3xl font-bold">Steps</h1>
-                    <ul className="flex flex-col gap-4 text-gray-for-dark-drop">
+                    <ul className="flex flex-col gap-4">
                         {gadget?.instructions.map((step: string, index: number) => (
-                            <li key={index}>{step}</li>
+                            <li className="font-bold" key={index}>{step}</li>
                         ))}
                     </ul>
                 </div>
