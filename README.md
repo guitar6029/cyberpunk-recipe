@@ -40,5 +40,5 @@ To get a local copy up and running, follow these simple steps:
 
 1. **Clone the repo**
    ```sh
-   git clone https://github.com/yourusername/cyber-biohack-recipes.git
+   git clone https://github.com/guitar6029/cyber-biohack-recipes.git
     ```
