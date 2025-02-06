@@ -37,7 +37,7 @@ export const gadgets: TGadget[] = [
             tradeExchangeLevel: "high"
         },
         shortDescription: "Unleash devastating power with neon-green Bio Hulk Hands, merging organic and synthetic might for unmatched strength.",
-        img: "/biohacks/cards/hulkHandUpgrade.png"
+        img: "/biohacks/cards/hulkHandUpgrade.jpg"
     },
     {
         id: 'f34545256',
@@ -62,7 +62,7 @@ export const gadgets: TGadget[] = [
             tradeExchangeLevel: "high"
         },
         shortDescription: "Master the digital realm with the Neural Interface Hack Chip, seamlessly merging your mind with cyberspace for unparalleled hacking prowess.",
-        img: "/biohacks/cards/neuralInterfaceHackChip.png"
+        img: "/biohacks/cards/neuralInterfaceHackChip.jpg"
     },
     {
         id: 'f34545257',
@@ -86,7 +86,7 @@ export const gadgets: TGadget[] = [
             tradeExchangeLevel: "low"
         },
         shortDescription: "Enhance your vision with the Chromatic Eye Enhancer, experiencing vivid colors and augmented reality in any environment.",
-        img: "/biohacks/cards/chromaticEyeEnhancer.png"
+        img: "/biohacks/cards/chromaticEyeEnhancer.jpg"
     },
     {
         id: 'f34545258',
@@ -112,7 +112,7 @@ export const gadgets: TGadget[] = [
         },
 
         shortDescription: "Become a ghost in the neon-lit city with the Stealth Cloak, rendering yourself invisible and undetectable to both eyes and sensors.",
-        img: "/biohacks/cards/stealthCloak.png"
+        img: "/biohacks/cards/stealthCloak.jpg"
     },
     {
 
@@ -133,7 +133,7 @@ export const gadgets: TGadget[] = [
             tradeExchangeLevel: "high"
         },
         shortDescription: "The Cybernetic Arm is the ultimate augmentation for the modern warrior. Constructed from Titanium Plates, it offers unparalleled strength and durability.",
-        img: "/biohacks/cards/cyberneticArm.png"
+        img: "/biohacks/cards/cyberneticArm.jpg"
     },
     {
         id: 'f34545260',
@@ -158,7 +158,7 @@ export const gadgets: TGadget[] = [
             tradeExchangeLevel: "high"
         },
         shortDescription: "Equip yourself with the Cybernetic Arm for unmatched strength, durability, and versatility, perfect for the dystopian streets of the future.",
-        img: "/biohacks/cards/shield.png"
+        img: "/biohacks/cards/shield.jpg"
     },
     {
 
@@ -184,7 +184,7 @@ export const gadgets: TGadget[] = [
             tradeExchangeLevel: "high"
         },
         shortDescription: "Harness the power of sound with the Sonic Disruptor Gauntlet, unleashing concussive blasts to incapacitate foes and shatter obstacles.",
-        img: "/biohacks/cards/sonicDisruptor.png"
+        img: "/biohacks/cards/sonicDisruptor.jpg"
     }
 
 ]
