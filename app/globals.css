@@ -18,7 +18,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: "Orbitron", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 
@@ -167,3 +167,11 @@ body {
   animation: pulse-once 0.5s ease-in-out forwards;
 }
 
+.nav-link{
+  color: white;
+  transition: color 0.3s ease-in-out;
+  transform-origin: left;
+  &:hover {
+    color: #ff007f;
+  }
+}
