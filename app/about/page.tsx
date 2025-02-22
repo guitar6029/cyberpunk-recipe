@@ -3,8 +3,8 @@ const Page: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col p-4">
       <TemplateCorners showCorners={false}>
-        <div className="relative flex flex-col gap-4 p-4">
-          <p className="sm:text-xl sm:w-[100vw] lg:w-[40vw] leading-relaxed lg:text-4xl text-gray-300  p-4 rounded-lg border-yellow-500 border-2">
+        <div className="relative flex flex-col gap-4 p-4 animate-slide-in-left">
+          <p className="sm:text-xl sm:w-[100vw] lg:w-[40vw] leading-relaxed lg:text-4xl text-gray-300  p-4 rounded-lg ">
             Welcome to &quot;hacks&quot;, a groundbreaking project set in a
             cyberpunk universe where users can unleash their creativity to build
             custom hacks, a groundbreaking project set in a cyberpunk universe
