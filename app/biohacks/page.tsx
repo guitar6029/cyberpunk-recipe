@@ -4,7 +4,6 @@ import { gadgets } from "@/dummydata/hacks";
 import Link from "next/link";
 import {
   Skull,
-  CircleDot,
   ChevronLeft,
   ChevronRight,
   Barcode,
@@ -67,13 +66,10 @@ const Biohacks: React.FC = () => {
   return (
     <TemplateCorners minHScreen={false} cornerColor="bg-yellow-500">
       <div className="flex flex-grow flex-col items-center gap-[10rem] justify-center ">
-        <div className="mt-5 text-center text-yellow-200 text-7xl font-bold flex flex-row items-baseline justify-center">
-          <span>Bi</span>
-          <CircleDot
-            size={40}
-            className="hover:animate-pulse transition-all duration-100 ease-in-out"
-          />
-          <span>hacks</span>
+        <div
+          className={`mt-5 text-center text-yellow-200 text-7xl font-bold flex flex-row items-baseline justify-center ${alkeron.className} `}
+        >
+          <h1>Biohacks</h1>
         </div>
         <div className="flex sm:flex-col lg:flex-row items-center gap-5 relative">
           {/* Previous Slide */}
