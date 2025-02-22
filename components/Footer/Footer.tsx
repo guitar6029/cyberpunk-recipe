@@ -3,7 +3,7 @@ import SecondaryBtn from "../Buttons/Nav/SecondaryBtn";
 
 const Footer: React.FC = () => {
     return (
-        <footer className="h-full sm:h-[25vh] flex sm:flex-col md:flex-row gap-2 items-center justify-around">
+        <footer className="h-full sm:h-[25vh] flex sm:flex-col md:flex-row gap-2 items-center justify-around bg-black">
             
             <SecondaryBtn btnText="hacks &copy; 2077" />
             
