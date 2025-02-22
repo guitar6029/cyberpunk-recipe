@@ -3,7 +3,6 @@ import { useParams } from "next/navigation";
 import { useState, useEffect } from "react";
 import TemplateCorners from "@/components/Template/TemplateCorners";
 import { gadgets, TGadget } from "@/dummydata/hacks";
-//import { Skull} from "lucide-react";
 import { MoveLeft } from "lucide-react";
 import Link from "next/link";
 import { alkeron } from "@/public/fonts/fonts";
@@ -29,24 +28,6 @@ const HackDetails: React.FC = () => {
 
     return () => clearTimeout(timeoutId);
   }, [hack]);
-
-  //   const levelTrading = () => {
-  //     if (gadget) {
-  //       if (gadget.description.tradeExchangeLevel === "low") {
-  //         return (
-  //           <div className="w-[75px] h-[20px] rounded-lg bg-yellow-200"></div>
-  //         );
-  //       } else if (gadget.description.tradeExchangeLevel === "medium") {
-  //         return (
-  //           <div className="w-[75px] h-[20px] rounded-lg bg-green-200"></div>
-  //         );
-  //       } else if (gadget.description.tradeExchangeLevel === "high") {
-  //         return <div className="w-[75px] h-[20px] rounded-lg bg-red-200"></div>;
-  //       }
-  //     } else {
-  //       return null;
-  //     }
-  //   };
 
   if (loading) {
     return (
@@ -93,26 +74,6 @@ const HackDetails: React.FC = () => {
               {gadget?.gadget}
             </h2>
           </div>
-
-          {/* <div className="flex flex-row items-center gap-2">
-            <h1 className="text-3xl font-bold">{gadget?.id} </h1>
-            {gadget?.description.psychosisPossible && (
-              <Skull size={40} className="text-pink-200" />
-            )}
-          </div> */}
-
-          {/* <div className="flex flex-row items-center gap-2">
-            <h3 className="text-xl font-bold">Trade Level </h3>
-            {levelTrading()}
-          </div>
-           */}
-          {/* <h1 className="text-3xl font-bold">{gadget?.gadget}</h1> */}
-
-          {/* <div className="relative">
-            <p className="text-xl leading-relaxed text-gray-for-dark-drop">
-              {gadget?.description.info}
-            </p>
-          </div> */}
         </div>
 
         <div className="relative flex flex-col gap-4 p-4">
@@ -133,17 +94,6 @@ const HackDetails: React.FC = () => {
             ))}
           </ul>
         </div>
-
-        {/* <div className="relative flex flex-col gap-4 p-4  rounded-lg text-white">
-          <h1 className="text-3xl font-bold">Steps</h1>
-          <ul className="flex flex-col gap-4">
-            {gadget?.instructions.map((step: string, index: number) => (
-              <li className="font-bold" key={index}>
-                {step}
-              </li>
-            ))}
-          </ul>
-        </div> */}
       </div>
     </TemplateCorners>
   );
