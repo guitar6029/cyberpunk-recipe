@@ -21,9 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` ${getOrbitron.variable} antialiased flex flex-col`}>
+      <body className={` ${getOrbitron.variable} antialiased flex flex-col min-h-screen`}>
         <Navbar />
-        <main className="min-h-screen flex-1">{children}</main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
