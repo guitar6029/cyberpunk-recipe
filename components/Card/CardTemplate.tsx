@@ -8,7 +8,7 @@ const CardTemplate: React.FC<CardTemplateProps> = ({ children, classString }) =>
     return (
         <div className={`${classString}`}>
             {/* top left line corner */}
-            <div className="absolute top-0 left-0 w-[.175vw] h-[15vh] bg-yellow-200"></div>
+            <div className="absolute top-0 left-0 w-[.15vw] h-[15vh] bg-yellow-200"></div>
 
             {/* bottom right line corner */}
             <div className="absolute bottom-0 right-0 w-[.175vw] h-full bg-yellow-200"></div>

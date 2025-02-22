@@ -64,7 +64,7 @@ const Biohacks: React.FC = () => {
   }, [currentBiohack, handleChangeSlide]);
 
   return (
-    <TemplateCorners minHScreen={false} cornerColor="bg-yellow-500">
+    <TemplateCorners minHScreen={false} showCorners={false}>
       <div className="flex flex-grow flex-col items-center gap-[10rem] justify-center ">
         <div
           className={`mt-5 text-center text-yellow-200 text-7xl font-bold flex flex-row items-baseline justify-center ${alkeron.className} `}
@@ -99,7 +99,7 @@ const Biohacks: React.FC = () => {
           </CardTemplate>
 
           {/* Current Slide */}
-          <CardTemplate classString="bg-black cursor-pointer relative z-40 p-4 flex flex-col w-[400px] h-[500px] truncate rounded-lg shadow-xl shadow-purple-400 scale-125">
+          <CardTemplate classString="bg-black cursor-pointer relative z-40 p-4 flex flex-col w-[400px] h-[500px] truncate rounded-lg shadow-xl shadow-purple-400 scale-125 hover:scale-150 transition ease-in duration-300">
             <Link
               href={"/biohacks/" + gadgets[currentBiohack].id}
               className="flex flex-col gap-2 "
