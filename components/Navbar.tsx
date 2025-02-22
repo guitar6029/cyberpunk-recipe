@@ -1,5 +1,6 @@
 import { alkeron } from "../public/fonts/fonts";
 import NavLink from "./Buttons/Nav/NavLink";
+
 const Navbar = () => {
   return (
     <div

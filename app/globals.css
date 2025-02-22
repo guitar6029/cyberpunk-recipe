@@ -175,3 +175,7 @@ body {
     color: #ff007f;
   }
 }
+
+.active {
+  color: #ff007f;
+}
