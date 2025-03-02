@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import BlueprintBackdrop from "@/public/biohacks/neuralnterfaceHackChip.png";
 import SecondaryBtn from "../Buttons/Nav/SecondaryBtn";
+import Dots from "../Dots/Dots";
 
 const stackImg = [
   "/biohacks/gadgets/gadget1.png",
@@ -15,38 +16,10 @@ const stackImg = [
 const Overview: React.FC = () => {
   return (
     <div className="relative flex flex-col p-5 mt-15">
-      {/* top side characters */}
-      <div className="absolute top-0 left-[3.5rem] w-[5px] h-[25vh] flex flex-col justify-center gap-2">
-        <div className="flex flex-row gap-2">
-          <div className="flex flex-col gap-2">
-            <div className="rounded-full w-[10px] h-[10px] bg-yellow-200"></div>
-            <div className="rounded-full w-[10px] h-[10px] bg-yellow-200"></div>
-            <div className="rounded-full w-[10px] h-[10px] bg-yellow-200"></div>
-          </div>
-          <div className="flex flex-col gap-2">
-            <div className="rounded-full w-[10px] h-[10px] bg-yellow-200"></div>
-            <div className="rounded-full w-[10px] h-[10px] bg-yellow-200"></div>
-            <div className="rounded-full w-[10px] h-[10px] bg-yellow-200"></div>
-          </div>
-        </div>
-      </div>
-
-      {/* bottom side characters */}
-      <div className="absolute bottom-0 right-[3.5rem] w-[5px] h-[25vh] flex flex-col justify-center gap-2">
-        <div className="flex flex-row gap-2">
-          <div className="flex flex-col gap-2">
-            <div className="rounded-full w-[10px] h-[10px] bg-yellow-200"></div>
-            <div className="rounded-full w-[10px] h-[10px] bg-yellow-200"></div>
-            <div className="rounded-full w-[10px] h-[10px] bg-yellow-200"></div>
-          </div>
-          <div className="flex flex-col gap-2">
-            <div className="rounded-full w-[10px] h-[10px] bg-yellow-200"></div>
-            <div className="rounded-full w-[10px] h-[10px] bg-yellow-200"></div>
-            <div className="rounded-full w-[10px] h-[10px] bg-yellow-200"></div>
-          </div>
-        </div>
-      </div>
-
+      
+      <Dots direction="top-left" />
+      <Dots direction="bottom-right" />
+      
       <div className="grid sm:grid-cols-1 md:grid-cols-2 sm:gap-10  p-4">
         <div className="col-span-1 flex flex-col items-center justify-center gap-5 text-yellow-200 p-4 font-bold">
           <div className="w-[50px] h-[10px] bg-yellow-200"></div>
@@ -90,8 +63,8 @@ const Overview: React.FC = () => {
                     className="hover:shadow-purple-600  hover:scale-105 transition duration-300 ease-in rounded-lg shadow-xl shadow-black"
                     src={img}
                     alt="cyberpunk"
-                    width={400}
-                    height={400}
+                    width={300}
+                    height={300}
                   />
                 </div>
               );
@@ -106,7 +79,8 @@ const Overview: React.FC = () => {
               className="hover:shadow-purple-600  group-hover:scale-105 transition duration-300 ease-in skew-x-3 rounded-lg shadow-xl shadow-black"
               src={BlueprintBackdrop}
               alt="cyberpunk"
-              width={400}
+              width={300}
+              height={300}
               style={{ zIndex: 0 }}
             />
           </div>

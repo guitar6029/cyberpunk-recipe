@@ -11,7 +11,7 @@ const Testimonial: React.FC<TestimonialProps> = ({ person }: TestimonialProps) =
         <div className="relative flex flex-row items-center gap-10 rounded-lg p-4 w-fit h-fit">
             <div className="flex flex-col gap-12">
                 <div className="col-span-2 flex flex-col gap-2 p-4 rounded-lg xl:-skew-y-10 shadow-lg shadow-indigo-500">
-                    <q className="text-3xl font-bold text-gray-for-dark-drop text-left leading-relaxed p-4 min-h-[20rem]">
+                    <q className="bg-slate-800 rounded-lg text-2xl font-bold text-gray-for-dark-drop text-left leading-relaxed p-4 min-h-[20rem]">
                         {person.description}
                     </q>
                     <h1 className="text-2xl font-bold text-yellow-200 p-4">
@@ -25,7 +25,7 @@ const Testimonial: React.FC<TestimonialProps> = ({ person }: TestimonialProps) =
                                 height={100}
                                 src={person.img}
                                 alt={person.name}
-                                className="z-20 rounded-full shadow-xl shadow-black border-2 border-pink-200 w-[8rem] md:w-[12rem]"
+                                className="z-20 hover:scale-105 transition duration-100 ease-in rounded-full shadow-xl shadow-black border-2 border-pink-200 hover:border-pink-500 w-[8rem] md:w-[12rem]"
                             />
                         </div>
                     </div>
@@ -33,16 +33,7 @@ const Testimonial: React.FC<TestimonialProps> = ({ person }: TestimonialProps) =
                 <div className="text-2xl font-bold text-yellow-200 xl:-skew-y-10 shadow-lg shadow-indigo-500 h-[10px]"></div>
             </div>
 
-            <div className="absolute bottom-0 left-[3.5rem] w-[5px] h-[25vh] flex flex-col justify-center gap-2">
-                <div className="flex flex-row gap-2">
-                    <div className="flex flex-col gap-2">
-                        <div className="w-[10px] h-[10px] text-yellow-200">
-                            <span className="text-2xl">/</span>
-                            <span className="text-2xl">/</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     );
 }

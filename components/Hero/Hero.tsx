@@ -2,7 +2,7 @@ import { alkeron } from "@/public/fonts/fonts";
 
 const Hero: React.FC = () => {
   return (
-    <div className="relative flex flex-col justify-center min-h-screen mt-[5rem]">
+    <div className="relative flex flex-col justify-center min-h-screen mt-[5rem] animate-slide-in-left">
       <div className="absolute top-0 left-0 w-[100%] h-[0.15rem] bg-yellow-500 z-[-1]"></div>
       <div className="absolute top-0 left-0 w-[1rem] h-[100%] bg-yellow-500 z-[-1] "></div>
 

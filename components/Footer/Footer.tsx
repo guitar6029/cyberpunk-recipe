@@ -3,13 +3,13 @@ import SecondaryBtn from "../Buttons/Nav/SecondaryBtn";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="min-h-[50vh] flex sm:flex-col md:flex-row gap-2 items-center justify-around bg-black">
+    <footer className="min-h-[60vh] flex flex-col justify-center md:flex-row gap-2 items-center md:justify-around bg-black">
       <div className="flex flex-row  items-center gap-2">
         <SecondaryBtn btnText="hacks &copy;" />
         <span>2077</span>
       </div>
 
-      <div className="flex flex-row gap-10">
+      <div className="flex flex-col md:flex-row gap-10">
         <div className="flex flex-col gap-3">
           <h1 className="font-bold text-2xl text-[#828085]">Category</h1>
           <Link href={"/#"} className="text-xl text-purple-400 hover:underline">

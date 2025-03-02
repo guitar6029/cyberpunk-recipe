@@ -2,7 +2,7 @@ import Testimonial from "./Testimonial.tsx/Testimonial";
 import { testimonials, TTestimonial } from "@/dummydata/testimonials";
 const Testimonials = () => {
     return ( 
-        <div className="grid grid-cols-3 gap-10 p-4 mt-[5rem] ">
+        <div className="flex flex-col md:grid md:grid-cols-3 gap-10 p-4 mt-[5rem] ">
            
            
            {/* <h1 className="font-extrabold text-5xl uppercase p-3 ">What our users say</h1> */}
