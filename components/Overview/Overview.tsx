@@ -14,7 +14,7 @@ const stackImg = [
 
 const Overview: React.FC = () => {
   return (
-    <div className="relative flex flex-col p-5">
+    <div className="relative flex flex-col p-5 mt-15">
       {/* top side characters */}
       <div className="absolute top-0 left-[3.5rem] w-[5px] h-[25vh] flex flex-col justify-center gap-2">
         <div className="flex flex-row gap-2">
