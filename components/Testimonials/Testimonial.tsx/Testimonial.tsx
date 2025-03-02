@@ -8,10 +8,10 @@ type TestimonialProps = {
 
 const Testimonial: React.FC<TestimonialProps> = ({ person }: TestimonialProps) => {
     return (
-        <div className="relative flex flex-row items-center gap-10 rounded-lg p-4 w-fit h-fit">
+        <div className="relative flex flex-row items-center gap-10 rounded-lg p-4 w-fit h-fit ">
             <div className="flex flex-col gap-12">
-                <div className="col-span-2 flex flex-col gap-2 p-4 rounded-lg xl:-skew-y-10 shadow-lg shadow-indigo-500">
-                    <q className="bg-slate-800 rounded-lg text-2xl font-bold text-gray-for-dark-drop text-left leading-relaxed p-4 min-h-[20rem]">
+                <div className="col-span-2 flex flex-col gap-2 p-4 rounded-lg xl:-skew-y-10 shadow-lg shadow-indigo-500 ">
+                    <q className="bg-slate-800 rounded-lg text-2xl font-bold text-white text-left leading-relaxed p-4 min-h-[20rem]">
                         {person.description}
                     </q>
                     <h1 className="text-2xl font-bold text-yellow-200 p-4">
@@ -30,7 +30,7 @@ const Testimonial: React.FC<TestimonialProps> = ({ person }: TestimonialProps) =
                         </div>
                     </div>
                 </div>
-                <div className="text-2xl font-bold text-yellow-200 xl:-skew-y-10 shadow-lg shadow-indigo-500 h-[10px]"></div>
+                {/* <div className="text-2xl font-bold text-yellow-200 xl:-skew-y-10 shadow-lg shadow-indigo-500 h-[10px]"></div> */}
             </div>
 
             

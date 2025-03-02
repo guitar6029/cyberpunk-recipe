@@ -53,7 +53,7 @@ const HackDetails: React.FC = () => {
           Go back
         </span>
       </Link>
-      <div className="col-span-1 flex flex-col gap-4">
+      <div className="col-span-1 flex flex-col gap-4 animate-slide-in-right">
         <div className="relative flex flex-col gap-4 rounded-lg  p-4">
           {/* background div block */}
           <div
@@ -69,7 +69,7 @@ const HackDetails: React.FC = () => {
 
           <div>
             <h2
-              className={`sm:text-4xl lg:text-7xl font-bold ${alkeron.className}`}
+              className={`sm:text-4xl lg:text-7xl font-bold ${alkeron.className} drop-shadow-lg w-fit p-2 bg-yellow-500  `}
             >
               {gadget?.gadget}
             </h2>
