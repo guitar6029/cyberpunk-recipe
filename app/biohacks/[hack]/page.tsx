@@ -12,13 +12,14 @@ const HackDetails: React.FC = () => {
   const { hack } = params;
   const [gadget, setGadget] = useState<TGadget | null>(null);
   const [loading, setLoading] = useState(true);
-
+  const [imgSource, setImgSource] = useState("");
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       const findGadget = gadgets.find((gadget: TGadget) => gadget.id === hack);
 
       if (findGadget) {
         setGadget(findGadget);
+        setImgSource(findGadget.img.src);
         setLoading(false);
       } else {
         setGadget(null);
@@ -59,7 +60,7 @@ const HackDetails: React.FC = () => {
           <div
             style={{
               zIndex: -1,
-              backgroundImage: `url(${gadget?.img})`,
+              backgroundImage: `url(${imgSource})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
