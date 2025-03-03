@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-import BlueprintBackdrop from "@/public/biohacks/neuralnterfaceHackChip.png";
+import BlueprintBackdrop from "@/app/assets/img/biohacks/neuralnterfaceHackChip.png";
 import SecondaryBtn from "../Buttons/Nav/SecondaryBtn";
 import Dots from "../Dots/Dots";
 

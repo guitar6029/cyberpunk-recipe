@@ -182,6 +182,71 @@ body {
   }
 }
 
+@keyframes bg-pulse {
+  0% {
+    background-color: rgb(13, 10, 10);
+  }  
+
+  50% {
+    background-color: rgba(185, 185, 68, 0.786);
+  }
+
+  100% {
+    background-color: none;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+
+@keyframes blur {
+  from {
+    filter: blur(4px);
+  }
+  to {
+    filter: blur(0px);
+  }
+}
+
+@keyframes bg-grow {
+  0% {
+    width: 0;
+    background: yellow;
+  }
+  50% {
+    width: 100%;
+    background: red;
+
+  }
+  100%{
+    width: 100%;
+    background: none;
+  }
+
+}
+
+.bg-grow-animation{
+  animation: bg-grow 2s ease-in-out forwards;
+}
+
+.blur-animation{
+  animation: blur 2s ease-in-out forwards 6s;
+}
+
+.fade-in{
+  animation: fade-in 3s ease-in-out forwards 6s;
+}
+
+.bg-pulse {
+ animation: bg-pulse 3s ease-in-out forwards;
+}
+
 .animate-pulse-once {
   animation: pulse-once 0.5s ease-in-out forwards;
 }
@@ -197,4 +262,9 @@ body {
 
 .active {
   color: #ff007f;
+}
+
+
+.shape-backdrop {
+  clip-path: polygon(23% 0, 100% 0, 84% 22%, 84% 53%, 51% 66%, 39% 100%, 0% 80%, 0 24%);
 }
