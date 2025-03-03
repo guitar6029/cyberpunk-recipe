@@ -5,6 +5,7 @@ import BlueprintBackdrop from "@/app/assets/img/biohacks/neuralnterfaceHackChip.
 import SecondaryBtn from "../Buttons/Nav/SecondaryBtn";
 import Dots from "../Dots/Dots";
 
+
 const stackImg = [
   "/biohacks/gadgets/gadget1.png",
 
@@ -22,6 +23,9 @@ const Overview: React.FC = () => {
       
       <div className="grid sm:grid-cols-1 md:grid-cols-2 sm:gap-10  p-4">
         <div className="col-span-1 flex flex-col items-center justify-center gap-5 text-yellow-200 p-4 font-bold">
+          
+
+          
           <div className="w-[50px] h-[10px] bg-yellow-200"></div>
           <div className="flex  sm:flex-row md:flex-col gap-2 animate-pulse-once">
             <SecondaryBtn btnText="Customized" />

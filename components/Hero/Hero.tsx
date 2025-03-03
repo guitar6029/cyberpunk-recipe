@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
   const heroText = ["Recode.", "Recharge.", "Redefine."];
 
   return (
-    <div className="relative flex flex-col justify-center min-h-screen mt-[5rem] bg-pulse">
+    <div className="relative flex flex-col justify-center min-h-screen mt-[5rem]">
       <div className="absolute top-10 left-0 w-[100%] h-[0.15rem] bg-yellow-400 z-[-1]"></div>
       <div className="absolute top-0 left-0 w-[.15rem] h-[100%] bg-yellow-400 z-[-1] "></div>
 
