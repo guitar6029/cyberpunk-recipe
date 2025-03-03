@@ -4,14 +4,15 @@ import { ArrowUpRight } from "lucide-react";
 import BlueprintBackdrop from "@/app/assets/img/biohacks/neuralnterfaceHackChip.png";
 import SecondaryBtn from "../Buttons/Nav/SecondaryBtn";
 import Dots from "../Dots/Dots";
-
+import gadget1 from "@/app/assets/img/biohacks/gadgets/gadget1.png";
+import gadget2 from "@/app/assets/img/biohacks/gadgets/gadget2.png";
+import gadget3 from "@/app/assets/img/biohacks/gadgets/gadget3.png";
+import type { StaticImageData } from "next/image";
 
 const stackImg = [
-  "/biohacks/gadgets/gadget1.png",
-
-  "/biohacks/gadgets/gadget2.png",
-
-  "/biohacks/gadgets/gadget3.png",
+  gadget1,
+  gadget2,
+  gadget3,
 ];
 
 const Overview: React.FC = () => {
@@ -43,7 +44,7 @@ const Overview: React.FC = () => {
 
         <div className="col-span-1 md:p-5 relative" style={{ height: "500px" }}>
           {stackImg &&
-            stackImg.map((img: string, index: number) => {
+            stackImg.map((img: StaticImageData, index: number) => {
               const topPropertyInitial = 50;
 
               const leftPropertyInitial = 120;
