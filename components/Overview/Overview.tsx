@@ -7,11 +7,11 @@ import Dots from "../Dots/Dots";
 
 
 const stackImg = [
-  "@/app/assets/img/biohacks/gadgets/gadget1.png",
+  "/biohacks/gadgets/gadget1.png",
 
-  "@/app/assets/img/biohacks/gadgets/gadget2.png",
+  "/biohacks/gadgets/gadget2.png",
 
-  "@/app/assets/img/biohacks/gadgets/gadget3.png",
+  "/biohacks/gadgets/gadget3.png",
 ];
 
 const Overview: React.FC = () => {
