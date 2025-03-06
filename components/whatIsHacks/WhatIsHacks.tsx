@@ -1,4 +1,5 @@
 "use client";
+import { cyberpunk } from "@/public/fonts/fonts";
 import { useState, useEffect } from "react";
 import { Package, Axe, Bot } from "lucide-react";
 import Link from "next/link";
@@ -33,7 +34,7 @@ const WhatIsHacks = () => {
       <Dots direction="top-right" />
       <div className="bg-black h-fit sm:flex-col sm:gap-10 md:flex-col items-center md:gap-2 justify-center sm:p-6 md:p-4 mt-5 ">
         <div className="flex flex-col items-center gap-6">
-          <h1 className="break-words min-h-[4rem] md:text-5xl text-2xl uppercase col-span-1 text-center text-white font-bold">
+          <h1 className={`break-words min-h-[4rem] md:text-5xl text-2xl uppercase col-span-1 text-center text-white font-bold ${cyberpunk.className}`}>
             {slides[currentSlide].title}
           </h1>
           <div className=" flex-col flex md:flex-row items-center gap-10">
@@ -42,7 +43,7 @@ const WhatIsHacks = () => {
                 className="group-hover:scale-105 transition duration-100 ease-in text-yellow-200"
                 size={100}
               />
-              <span className="group-hover:scale-105 transition duration-100 ease-in font-extrabold text-black sm:text-xl md:text-2xl rounded-full bg-white w-10 h-10 flex items-center justify-center">
+              <span className={`group-hover:scale-105 transition duration-100 ease-in font-extrabold text-black sm:text-xl md:text-2xl rounded-full bg-white w-10 h-10 flex items-center justify-center ${cyberpunk.className}`}>
                 1
               </span>
             </div>
@@ -51,7 +52,7 @@ const WhatIsHacks = () => {
                 className="group-hover:scale-105 transition duration-100 ease-in text-yellow-200"
                 size={100}
               />
-              <span className="group-hover:scale-105 transition duration-100 ease-in font-extrabold text-black sm:text-xl md:text-2xl rounded-full bg-white w-10 h-10 flex items-center justify-center">
+              <span className={`group-hover:scale-105 transition duration-100 ease-in font-extrabold text-black sm:text-xl md:text-2xl rounded-full bg-white w-10 h-10 flex items-center justify-center ${cyberpunk.className}`}>
                 2
               </span>
             </div>
@@ -60,7 +61,7 @@ const WhatIsHacks = () => {
                 className="group-hover:scale-105 transition duration-100 ease-in text-yellow-200"
                 size={100}
               />
-              <span className="group-hover:scale-105 transition duration-100 ease-in font-extrabold text-black sm:text-xl md:text-2xl rounded-full bg-white w-10 h-10 flex items-center justify-center">
+              <span className={`group-hover:scale-105 transition duration-100 ease-in font-extrabold text-black sm:text-xl md:text-2xl rounded-full bg-white w-10 h-10 flex items-center justify-center ${cyberpunk.className}`}>
                 3
               </span>
             </div>

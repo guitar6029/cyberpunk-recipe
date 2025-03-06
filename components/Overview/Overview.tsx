@@ -7,26 +7,18 @@ import Dots from "../Dots/Dots";
 import gadget1 from "@/app/assets/img/biohacks/gadgets/gadget1.png";
 import gadget2 from "@/app/assets/img/biohacks/gadgets/gadget2.png";
 import gadget3 from "@/app/assets/img/biohacks/gadgets/gadget3.png";
-import type { StaticImageData } from "next/image";
-
-const stackImg = [
-  gadget1,
-  gadget2,
-  gadget3,
-];
 
 const Overview: React.FC = () => {
   return (
-    <div className="relative flex flex-col p-5 mt-15">
-      
+    <div className="relative flex flex-col p-5 mt-5">
       <Dots direction="top-left" />
       <Dots direction="bottom-right" />
-      
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 sm:gap-10  p-4">
-        <div className="col-span-1 flex flex-col items-center justify-center gap-5 text-yellow-200 p-4 font-bold">
-          
 
-          
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 sm:gap-10  p-4">
+        {/* <div className="animate-slide-out-left absolute z-[10] shape-top-left-angle w-[100vw] h-[100vh] bg-yellow-500"></div>
+        <div className="animate-slide-out-right absolute z-[10] shape-bottom-right-angle w-[100vw] h-[100vh] bg-yellow-500"></div> */}
+
+        <div className="col-span-1 flex flex-col items-center justify-center gap-5 text-yellow-200 p-4 font-bold">
           <div className="w-[50px] h-[10px] bg-yellow-200"></div>
           <div className="flex  sm:flex-row md:flex-col gap-2 animate-pulse-once">
             <SecondaryBtn btnText="Customized" />
@@ -42,43 +34,43 @@ const Overview: React.FC = () => {
           </Link>
         </div>
 
-        <div className="col-span-1 md:p-5 relative" style={{ height: "500px" }}>
-          {stackImg &&
-            stackImg.map((img: StaticImageData, index: number) => {
-              const topPropertyInitial = 50;
+        <div className="grid grid-cols-2 grid-rows-2 gap-2">
+          <div className="col-span-1 row-span-2 rounded-lg h-[40rem]">
+            <Image
+              src={gadget1}
+              alt="cyberpunk"
+              width={300}
+              height={300}
+              className="w-full h-full object-cover"
+            />
+          </div>
 
-              const leftPropertyInitial = 120;
+          <div className="col-span-1 row-span-1  rounded-lg h-[20rem]">
+            <Image
+              src={gadget2}
+              alt="cyberpunk"
+              width={300}
+              height={300}
+              className="w-full h-full object-cover"
+            />
+          </div>
 
-              const initialSkewY = 6;
-
-              return (
-                <div
-                  key={index}
-                  className={`absolute transform skew-y-[${
-                    initialSkewY * index
-                  }] 
-                rounded-lg bg-slate-900 animate-slide-in-left  `}
-                  style={{
-                    top: `${topPropertyInitial * index + 10}px`,
-                    left: `${leftPropertyInitial * index + 10}px`,
-                    zIndex: index * 10 + 10,
-                  }}
-                >
-                  <Image
-                    className="hover:shadow-purple-600  hover:scale-105 transition duration-300 ease-in rounded-lg shadow-xl shadow-black"
-                    src={img}
-                    alt="cyberpunk"
-                    width={300}
-                    height={300}
-                  />
-                </div>
-              );
-            })}
+          <div className="col-span-1 row-span-1  rounded-lg h-[20rem]">
+            <Image
+              src={gadget3}
+              alt="cyberpunk"
+              width={300}
+              height={300}
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
+
+    
       </div>
 
       <div className="grid sm:grid-cols-1 md:grid-cols-2 sm:gap-10">
-        <div className="group col-span-1 flex items-center justify-center md:p-5 relative order-2 md:order-1 animate-slide-in-left">
+        <div className="group col-span-1 flex items-center justify-center md:p-5 relative order-2 md:order-1 ">
           <div className="relative">
             <Image
               className="hover:shadow-purple-600  group-hover:scale-105 transition duration-300 ease-in skew-x-3 rounded-lg shadow-xl shadow-black"

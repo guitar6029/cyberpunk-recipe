@@ -71,7 +71,7 @@ const Biohacks: React.FC = () => {
         >
           <h1>Biohacks</h1>
         </div>
-        <div className="flex sm:flex-col lg:flex-row items-center gap-5 relative">
+        <div className="flex sm:flex-col lg:flex-row items-center gap-3 relative">
           {/* Previous Slide */}
           <CardTemplate classString="z-10  p-4 flex flex-col items-center justify-center gap-2 sm:w-[100px] sm:h-[150px] lg:w-[250px] lg:h-[300px] truncate rounded-lg shadow-lg shadow-stone-500 blur">
             <div className="flex flex-row gap-1 items-center">
