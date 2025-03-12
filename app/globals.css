@@ -20,7 +20,7 @@
 
 html {
   max-width: 1920px;
-  min-width: 640px;
+  /* min-width: 640px; */
 }
 
 html,

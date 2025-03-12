@@ -1,22 +1,10 @@
 import { alkeron } from "@/public/fonts/fonts";
-import HeroImage from "@/app/assets/img/hero.png";
-import Image from "next/image";
 const Hero: React.FC = () => {
   const heroText = ["Recode.", "Recharge.", "Redefine."];
 
   return (
-    <div className="relative flex flex-col justify-center min-h-screen mt-[5rem]">
-      <div className="absolute top-10 left-0 w-[100%] h-[0.15rem] bg-yellow-400 z-[-1]"></div>
-      <div className="absolute top-0 right-0 z-[-1] bg-yellow-500 w-[5rem] h-[120rem]"></div>
-
-      <Image
-        src={HeroImage}
-        alt="Hero"
-        width={900}
-        className="absolute md:block top-1/2 right-10 transform  -translate-y-1/2 z-[-1]"
-      />
-
-      <div className="p-5 w-[fit] flex flex-col  justify-center ">
+    <div className="relative flex flex-col justify-center min-h-[50vh] md:min-h-screen mt-[5rem]">
+      <div className="p-5 w-[fit] flex flex-col justify-between md:justify-center ">
         {heroText.map((text: string, index: number) => {
           return (
             <div

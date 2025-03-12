@@ -10,14 +10,11 @@ import gadget3 from "@/app/assets/img/biohacks/gadgets/gadget3.png";
 
 const Overview: React.FC = () => {
   return (
-    <div className="relative flex flex-col p-5 mt-5">
+    <div className="relative flex flex-col gap-5 p-5 mt-5">
       <Dots direction="top-left" />
       <Dots direction="bottom-right" />
 
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 sm:gap-10  p-4">
-        {/* <div className="animate-slide-out-left absolute z-[10] shape-top-left-angle w-[100vw] h-[100vh] bg-yellow-500"></div>
-        <div className="animate-slide-out-right absolute z-[10] shape-bottom-right-angle w-[100vw] h-[100vh] bg-yellow-500"></div> */}
-
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 sm:gap-10 p-4">
         <div className="col-span-1 flex flex-col items-center justify-center gap-5 text-yellow-200 p-4 font-bold">
           <div className="w-[50px] h-[10px] bg-yellow-200"></div>
           <div className="flex  sm:flex-row md:flex-col gap-2 animate-pulse-once">
@@ -65,8 +62,6 @@ const Overview: React.FC = () => {
             />
           </div>
         </div>
-
-    
       </div>
 
       <div className="grid sm:grid-cols-1 md:grid-cols-2 sm:gap-10">
@@ -87,9 +82,7 @@ const Overview: React.FC = () => {
           <div className="flex flex-col items-center gap-2">
             <div className="w-[50px] h-[10px] bg-yellow-200"></div>
             <div className="flex sm:flex-row md:flex-col gap-2 animate-pulse-once">
-              {/* <h1 className="sm:text-xl md:text-4xl xl:text-7xl">Customized</h1> */}
               <SecondaryBtn btnText="Blueprints" />
-              {/* <h1 className="sm:text-xl md:text-4xl xl:text-7xl">Blueprints</h1> */}
             </div>
           </div>
 
